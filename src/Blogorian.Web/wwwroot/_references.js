@@ -28,7 +28,6 @@
 /// <reference path="app/posts/posts.controller.js" />
 /// <reference path="app/posts/posts.detail.controller.js" />
 /// <reference path="app/posts/posts.route.js" />
-/// <reference path="js/site.js" />
 /// <reference path="release/output.js" />
 /// <reference path="release/plugins/plugins.js" />
 /// <reference path="release/scripts/app.js" />
