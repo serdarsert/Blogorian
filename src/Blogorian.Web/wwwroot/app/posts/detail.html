@@ -1,0 +1,19 @@
+﻿<div class="panel panel-danger">
+    <div class="panel-heading">{{::vm.post.title}}</div>
+    <div class="panel-body">
+        <div class="media well">
+            <div class="media-body text-justify">
+                <p ng-bind-html="::vm.post.content"></p>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div>
+            <span ng-repeat="tag in vm.post.tags"><span class="label label-primary"><a href="#/tag/{{::tag}}">{{::tag}}</a></span> </span>
+            <div class="pull-right top-right">
+                {{:: vm.post.publishedDate | date:'dd/MM/yyyy'}}
+            </div>
+        </div>
+
+    </div>
+</div>

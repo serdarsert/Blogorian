@@ -1,0 +1,29 @@
+﻿<div class="panel panel-danger" ng-repeat="post in vm.posts">
+    <div class="panel-heading"><a href="#/post/{{::post.url}}">{{::post.title}}</a></div>
+    <div class="panel-body">
+        <div class="media">
+            <div class="col-sm-4">
+                <a class="pull-left" href="#/post/{{::post.url}}" title="{{::post.title}}">
+                    <img class="media-object img-responsive thumbnail" ng-src="{{::post.imageUrl}}" alt="{{::post.title}}" />
+                </a>
+            </div>
+            <div class="col-sm-8">
+                <div class="media-body">
+                    <div class="media-body text-justify">
+                        <p ng-bind-html="::post.content | limitTo:500"></p>
+                    </div>
+                    <a href="#/post/{{::post.url}}" class="btn btn-success pull-right">Read Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <div>
+            <span ng-repeat="tag in post.tags"><span class="label label-primary"><a href="#/tag/{{::tag}}">{{::tag}}</a></span> </span>
+            <div class="pull-right top-right">
+                {{:: post.publishedDate | date:'dd/MM/yyyy'}}
+            </div>
+        </div>
+
+    </div>
+</div>

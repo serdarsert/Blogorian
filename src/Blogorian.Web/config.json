@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "Blogorian.Web"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-Blogorian.Web-56e730ae-25c6-4894-84cb-346793163f49;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

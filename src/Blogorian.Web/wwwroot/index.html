@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html ng-app="blogorianApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Blogorian</title>
+    <link rel="stylesheet" href="/release/css/blogorian.css">
+    <script src="/release/plugins/plugins.js"></script>
+    <script src="/release/scripts/core.js"></script>
+    <script src="/release/scripts/domain.js"></script>
+    <script src="/release/scripts/app.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main" class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/#/">Blogorian</a>
+                        <p class="navbar-text">Next Generation Blog System</p>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/#/">Posts <span class="sr-only">(current)</span></a></li>
+                            <li><a href="/#/about">About</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-lg-9 clean-padding">
+                <ng-view></ng-view>
+            </div>
+            <div class="col-md-3 clean-padding-right">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Categories</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge">14</span>
+                                <a href="#" class="action-text">C#</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">7</span>
+                                <a href="#" class="action-text">Asp.Net</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">22</span>
+                                <a href="#" class="action-text">Mvc</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Tags</h3>
+                    </div>
+                    <div class="panel-body">
+                        <button class="btn btn-sm btn-danger" type="button">
+                            security <span class="badge">4</span>
+                        </button>
+                        <button class="btn btn-sm btn-primary" type="button">
+                            angular <span class="badge">2</span>
+                        </button>
+                        <button class="btn btn-sm btn-info" type="button">
+                            typescript <span class="badge">5</span>
+                        </button>
+                        <button class="btn btn-sm btn-success" type="button">
+                            architecture <span class="badge">8</span>
+                        </button>
+                        <button class="btn btn-sm btn-warning" type="button">
+                            mobile <span class="badge">7</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
